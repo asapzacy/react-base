@@ -1,0 +1,31 @@
+
+/* -------  Spinner  ------- */
+
+.spinner {
+  position: relative;
+  height: 1.25em;
+  width: 1.25em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4em;
+  &::before {
+    content: '';
+    margin: auto;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    border-top-color: $black;
+    animation: spinner 0.6s linear infinite;
+    height: 1.25em;
+    width: 1.25em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@keyframes spinner {
+  to { transform: rotate(360deg) }
+}

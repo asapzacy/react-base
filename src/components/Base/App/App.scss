@@ -1,0 +1,14 @@
+
+/* -------  App  ------- */
+
+.outerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  composes: fullSize from 'sass/_classes.scss';
+}
+
+.innerContainer {
+  width: 100%;
+}

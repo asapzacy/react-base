@@ -1,0 +1,11 @@
+
+/* -------  NotFound  ------- */
+
+.container {
+  composes: fullSize flexyCentered from 'sass/_classes.scss'
+}
+
+.text {
+  font-size: 16em;
+  font-family: monospace;
+}

@@ -1,0 +1,15 @@
+
+/* -------  styling mixins  ------- */
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin position($top, $right, $bottom, $left) {
+  position:absolute;
+  top:$top;
+  right:$right;
+  bottom:$bottom;
+  left:$left;
+}

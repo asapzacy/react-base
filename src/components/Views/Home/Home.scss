@@ -1,0 +1,6 @@
+
+/* -------  Home  ------- */
+
+.container {
+  composes: flexyColSpaceBetween fullSize from 'sass/_classes.scss';
+}
