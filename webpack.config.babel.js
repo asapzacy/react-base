@@ -3,6 +3,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const PostcssAssetsPlugin = require('postcss-assets-webpack-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const autoprefixer = require('autoprefixer')
 const mqpacker = require('css-mqpacker')
 const cssnano = require('cssnano')
@@ -53,13 +54,16 @@ const postcssAssetsPlugin = new PostcssAssetsPlugin({
   ]
 })
 
-const uglifyJsPlugin = new webpack.optimize.UglifyJsPlugin({
-  compress: { warnings: false, screw_ie8: true },
-  comments: false,
+const uglifyJsPlugin = new UglifyJsPlugin({
   sourceMap: true,
-  mangle: true,
-  minimize: true,
-  beautify: false
+  uglifyOptions: {
+    ecma: 8,
+    comments: false,
+    mangle: true,
+    minimize: true,
+    beautify: false,
+    compress: { warnings: false }
+  }
 })
 
 const productionPlugin = new webpack.DefinePlugin({
