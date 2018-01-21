@@ -3,5 +3,5 @@
 .env
 .vscode
 
-/dist/assets/build/
+/dist/*assets/build/
 /dist/index.html
