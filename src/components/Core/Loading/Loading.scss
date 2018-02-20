@@ -3,7 +3,7 @@
 
 .container {
   margin-top: 12.5%;
-  composes: flexyCentered from 'sass/_classes.scss';
+  composes: flexyCentered from 'styles/_classes.scss';
 }
 
 .spinner {
@@ -30,7 +30,7 @@
   transform-origin: center center;
   animation: rotate 2s linear infinite;
   @include position(0, 0, 0, 0);
-  composes: fullSize from 'sass/_classes.scss';
+  composes: fullSize from 'styles/_classes.scss';
 
 }
 .path {

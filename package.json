@@ -1,13 +1,13 @@
 {
   "name": "react-base",
-  "description": "minimal react project -- base files",
+  "description": "minimal react | react-router | babel | eslint | jest | code splitting | webpack project -- base files",
   "author": "Zac Arellano",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": true,
   "main": "app.js",
   "engines": {
-    "node": ">= 7.6.0"
+    "node": ">= 8.0.0"
   },
   "scripts": {
     "dev": "env UV_THREADPOOL_SIZE=100 webpack-dev-server --progress --colors",
@@ -23,6 +23,8 @@
     "lint:fix": "eslint --fix src/.; exit 0",
     "test": "jest",
     "test:watch": "jest --watch",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
     "svg": "find dist/assets -name '*.svg' -type f -exec yarn svgo '{}' \\;",
     "svgo": "svgo --config='{ \"plugins\": [{ \"removeTitle\": false },{ \"removeViewBox\": false }]}'"
   },
@@ -70,6 +72,7 @@
     "postcss-assets-webpack-plugin": "^1.1.0",
     "postcss-loader": "^2.0.10",
     "react-hot-loader": "^3.1.3",
+    "react-styleguidist": "^6.2.5",
     "sass-loader": "^6.0.6",
     "sass-resources-loader": "^1.3.1",
     "style-loader": "^0.19.1",

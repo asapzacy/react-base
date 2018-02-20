@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  composes: fullSize from 'sass/_classes.scss';
+  composes: fullSize from 'styles/_classes.scss';
 }
 
 .innerContainer {
