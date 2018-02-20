@@ -1,15 +1,20 @@
 
-/* -------  Base  ------- */
-import App from './Base/App/App'
-import Header from './Base/Header/Header'
-
-/* -------  Views  ------- */
-import Home from './Views/Home/Home'
-import NotFound from './Views/NotFound/NotFound'
+/* -------  HOCs  ------- */
+import withLoadable from './HOCs/withLoadable'
 
 /* -------  Core  ------- */
-import Spinner from './Core/Spinner/Spinner'
 import Loading from './Core/Loading/Loading'
+import Spinner from './Core/Spinner/Spinner'
+
+/* -------  Base  ------- */
+const App = withLoadable({ loader: () => import('./Base/App/App') })
+const Header = withLoadable({ loader: () => import('./Base/Header/Header') })
+
+/* -------  Views  ------- */
+const Home = withLoadable({ loader: () => import('./Views/Home/Home') })
+const About = withLoadable({ loader: () => import('./Views/About/About') })
+const Contact = withLoadable({ loader: () => import('./Views/Contact/Contact') })
+const NotFound = withLoadable({ loader: () => import('./Views/NotFound/NotFound') })
 
 /* -------  Utils  ------- */
 
@@ -17,6 +22,8 @@ export {
   App,
   Header,
   Home,
+  About,
+  Contact,
   NotFound,
   Spinner,
   Loading

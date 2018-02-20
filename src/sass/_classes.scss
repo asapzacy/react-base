@@ -26,9 +26,9 @@
 }
 
 .flexyCenteredCol {
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -60,6 +60,11 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.flexyJustifyEnd {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .flexySpaceAroundEnd {
@@ -174,4 +179,14 @@
   padding: 0 8.333333%;
   margin: 50px auto 150px;
   max-width: 2450px;
+}
+
+.examplePage {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.44em;
+  font-family: monospace;
+  color: #f9f9f9;
 }

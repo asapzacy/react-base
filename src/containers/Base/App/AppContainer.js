@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { App } from 'components'
-import { withRouter } from 'react-router-dom'
 
-@withRouter
 class AppContainer extends Component {
   state = { isMenuOpen: false }
   triggerMenu = () => {

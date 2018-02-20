@@ -3,7 +3,7 @@ import s from './Home.scss'
 
 const Home = () => (
   <section className={s.container}>
-    {'home'}
+    {'Home Page'}
   </section>
 )
 
