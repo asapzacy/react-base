@@ -14,7 +14,7 @@ const LAUNCH_COMMAND = process.env.npm_lifecycle_event
 const isProduction = LAUNCH_COMMAND === 'build'
 process.env.BABEL_ENV = LAUNCH_COMMAND
 
-const HOST = process.env.HOST || 'local.uxscoreboard.com'
+const HOST = process.env.HOST || 'localhost'
 const DEV_PORT = process.env.DEV_PORT || 4444
 const API_PORT = process.env.API_PORT || 4545
 
