@@ -1,6 +1,6 @@
 {
   "name": "react-base",
-  "description": "minimal react project -- base files",
+  "description": "minimal react | react-router | babel | eslint | jest | code splitting | webpack project -- base files",
   "author": "Zac Arellano",
   "license": "MIT",
   "version": "1.0.0",
@@ -23,6 +23,8 @@
     "lint:fix": "eslint --fix src/.; exit 0",
     "test": "jest",
     "test:watch": "jest --watch",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
     "svg": "find dist/assets -name '*.svg' -type f -exec yarn svgo '{}' \\;",
     "svgo": "svgo --config='{ \"plugins\": [{ \"removeTitle\": false },{ \"removeViewBox\": false }]}'",
     "outdated:list": "yarn outdated",
