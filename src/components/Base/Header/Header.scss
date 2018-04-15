@@ -6,7 +6,7 @@
   padding: 0 2%;
   background: $coolwhite;
   @include size(100%, 5em);
-  composes: flexySpaceBetween from 'sass/_classes.scss';
+  composes: flexySpaceBetween from 'styles/_classes.scss';
 }
 
 .nav {
@@ -14,7 +14,7 @@
 }
 
 .navList {
-  composes: flexyJustifyEnd from 'sass/_classes.scss';
+  composes: flexyJustifyEnd from 'styles/_classes.scss';
 }
 
 .navItem {

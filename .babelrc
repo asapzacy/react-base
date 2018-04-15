@@ -3,10 +3,11 @@
     ["@babel/preset-env", {
       "targets": { "safari": 10 },
       "modules": false,
-      "debug": true
+      "debug": false
     }],
     "@babel/preset-react",
-    "@babel/preset-stage-0"
+    "@babel/preset-stage-0",
+    "@babel/flow"
   ],
   "plugins": [
     "@babel/plugin-syntax-decorators"
